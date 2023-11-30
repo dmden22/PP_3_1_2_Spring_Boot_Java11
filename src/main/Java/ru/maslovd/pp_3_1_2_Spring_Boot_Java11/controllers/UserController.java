@@ -12,7 +12,7 @@ import ru.maslovd.pp_3_1_2_Spring_Boot_Java11.service.UserService;
 @Controller
 public class UserController {
 
-    private UserService userService;
+    private final UserService userService;
 
     @Autowired
     public UserController(UserService userService) {
